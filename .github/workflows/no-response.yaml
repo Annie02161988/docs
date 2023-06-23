@@ -5,15 +5,15 @@ name: No Response
 # **Why we have it**: To remove the need for maintainers to remember to check
 #                     back on issues periodically to see if contributors have
 #                     responded.
-# **Who does it impact**: Everyone that works on docs or docs-internal.
+# **Who does i
 
 on:
   issue_comment:
     types: [created]
 
   schedule:
-    # Schedule for five minutes after the hour every hour
-    - cron: '5 * * * *'
+    # Schedule for five  after the hour every hour
+
 
 permissions:
   issues: write
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: lee-dohm/no-response@9bb0a4b5e6a45046f00353d5de7d90fb8bd773bb
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: 
           closeComment: >
             This issue has been automatically closed because there has been no response
             to our request for more information from the original author. With only the
